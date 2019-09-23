@@ -662,6 +662,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 2243551683834170780, guid: 5a82f33095022a947a1db052d223be24,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a82f33095022a947a1db052d223be24, type: 3}
 --- !u!1 &963194225
@@ -834,6 +839,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 2243551683834170780, guid: 5a82f33095022a947a1db052d223be24,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a82f33095022a947a1db052d223be24, type: 3}
 --- !u!1 &1347527601
@@ -848,8 +858,8 @@ GameObject:
   - component: {fileID: 1347527604}
   - component: {fileID: 1347527603}
   - component: {fileID: 1347527607}
-  - component: {fileID: 1347527606}
   - component: {fileID: 1347527602}
+  - component: {fileID: 1347527606}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged

@@ -24,4 +24,14 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         rb.AddForce(movement*speed);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pick Up"))
+        {
+            other.gameObject.SetActive(false); //every time we touch a trigger coll deactivate the game obj
+        }
+       // if(other.gameObject.CompareTag("Player")) //compares gameobject tag with a string
+       // Destroy(other.gameObject); //deletes the gameobject form the scene
+    }
 }
