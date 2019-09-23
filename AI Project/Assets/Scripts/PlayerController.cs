@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private RigidBody rb;
+    public float speed;
+    private Rigidbody rb;
+    
     void Start() //called in the first frame the  script is active
     {
-        rb = GetComponent<RigidBody>();
+        rb = GetComponent<Rigidbody>();
     }
    //void Update() //called before rendering a FRAME
    // {
@@ -20,6 +22,6 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        rb.AddForce(movement);
+        rb.AddForce(movement*speed);
     }
 }
