@@ -6,7 +6,6 @@ public class CrazyCylinder : MonoBehaviour
 
     public float thrust;
     public Rigidbody rb;
-    PlayerController pl;
     public GameObject go;
     // Start is called before the first frame update
     void Start()
