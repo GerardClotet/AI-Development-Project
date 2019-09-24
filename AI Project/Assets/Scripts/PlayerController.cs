@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
         count = 0;
         SetCountText();
         WinText.text = "";
+        
     }
    //void Update() //called before rendering a FRAME
    // {
