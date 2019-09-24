@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
     public Text WinText;
     private Rigidbody rb;
     private int count;
+    public Vector3 position;
     void Start() //called in the first frame the  script is active
     {
         rb = GetComponent<Rigidbody>();
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         rb.AddForce(movement*speed);
+        position = movement * speed;
     }
 
     void OnTriggerEnter(Collider other)
