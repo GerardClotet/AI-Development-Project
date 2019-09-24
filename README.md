@@ -28,6 +28,10 @@ Classe -> puntuació ---> Pati->bulyng al que te menys puntuacio->barra pshyco
 
 ----> Menjador -> capullo --> si els pillen els profes baixa la puntuacio
 
+## More*
 
+manage the teachers per classrom (ex 5 classes and 2 teachers)->students score is lower 
+conserge baixa scoore si esta brut el tema
+    
 
 
