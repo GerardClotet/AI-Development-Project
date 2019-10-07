@@ -21,5 +21,32 @@ public class SteeringAlign : MonoBehaviour {
         // Find the desired rotation and accelerate to it
         // Use Vector3.SignedAngle() to find the angle between two directions
 
+        float desired_rot = Vector3.SignedAngle(Vector3.forward, move.movement, Vector3.up);
+        float current_rot = move.transform.localRotation.eulerAngles.y;
+        float final_rot = desired_rot - current_rot;
+
+        //Delete additional loops
+        final_rot %= 360;
+
+        if (Mathf.Abs(final_rot) > 180)
+        {
+            float sign = Mathf.Sign(final_rot);
+            final_rot = 360 - Mathf.Abs(final_rot);
+            final_rot *= -sign;
+        }
+
+        if (final_rot < slow_angle)
+        {
+            final_rot /= slow_angle;
+        }
+
+        if (Mathf.Abs(final_rot) <= min_angle)
+        {
+            move.SetRotationVelocity(0f);
+        }
+        else
+        {
+            move.AccelerateRotation(final_rot);
+        }
     }
 }
