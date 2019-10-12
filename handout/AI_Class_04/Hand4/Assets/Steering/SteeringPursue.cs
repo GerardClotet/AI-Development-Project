@@ -8,12 +8,15 @@ public class SteeringPursue : MonoBehaviour {
 	Move move;
     SteeringSeek seek;
     SteeringArrive arrive;
+    public GameObject enemy;
+    Move Movenemy;
 
 	// Use this for initialization
 	void Start () {
 		move = GetComponent<Move>();
         seek = GetComponent<SteeringSeek>();
         arrive = GetComponent<SteeringArrive>();
+        Movenemy = enemy.GetComponent<Move>();
 	}
 	
 	// Update is called once per frame
@@ -26,7 +29,18 @@ public class SteeringPursue : MonoBehaviour {
 	{
         // TODO 5: Create a fake position to represent
 
-        Vector3 enemyPos;
+        target = Movenemy.transform.position;
+
+        Vector3 diff = move.target.transform.position - transform.position;
+        diff.Normalize();
+        diff *= move.max_mov_acceleration;
+        move.AccelerateMovement(diff);
+
+
+
+
+
+
         // enemies predicted movement. Then call Steer()
         // on our Steering Seek / Arrive with the predicted position in
         // max_seconds_prediction time
