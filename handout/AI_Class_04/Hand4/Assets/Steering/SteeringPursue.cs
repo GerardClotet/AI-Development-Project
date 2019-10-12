@@ -27,7 +27,7 @@ public class SteeringPursue : MonoBehaviour {
 
 	public void Steer(Vector3 target, Vector3 target_velocity, float max_target_speed)
 	{
-        // TODO 5: Create a fake position to represent
+      
 
         target = Movenemy.transform.position;
 
@@ -36,19 +36,5 @@ public class SteeringPursue : MonoBehaviour {
         float seconds_prediction = distance / max_target_speed;
         Vector3 prediction = target + target_velocity * seconds_prediction;
         arrive.Steer(prediction);
-
-
-
-
-
-        // enemies predicted movement. Then call Steer()
-        // on our Steering Seek / Arrive with the predicted position in
-        // max_seconds_prediction time
-        // Be sure that arrive / seek's update is not called at the same time
-
-        // TODO 6: Improve the prediction based on the distance from
-        // our target and the speed we have
-
-        seek.Steer(target);
     }
 }
