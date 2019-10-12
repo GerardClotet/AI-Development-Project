@@ -1,0 +1,31 @@
+Initialize engine version: 5.3.5f1 (960ebf59018a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.041 seconds
+Platform assembly: E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\System Folders\Downloads\AI Class 06_Old\AI Class 06\solution\solution class 06_Data\Managed\System.dll (this message is harmless)
+desktop: 2560x1440 59Hz; virtual: 4960x1549 at -2400,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.438400 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: e28 -> priority: 1 
