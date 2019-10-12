@@ -33,7 +33,7 @@ public class SteeringPursue : MonoBehaviour {
 
         Vector3 diff = target - transform.position;
         float distance = diff.magnitude;
-        float seconds_prediction = distance / max_;
+        float seconds_prediction = distance / max_target_speed;
         Vector3 prediction = target + target_velocity * seconds_prediction;
         arrive.Steer(prediction);
 
