@@ -31,11 +31,11 @@ public class SteeringPursue : MonoBehaviour {
 
         target = Movenemy.transform.position;
 
-        Vector3 diff = move.target.transform.position - transform.position;
-        diff.Normalize();
-        diff *= move.max_mov_acceleration;
-        move.AccelerateMovement(diff);
-
+        Vector3 diff = target - transform.position;
+        float distance = diff.magnitude;
+        float seconds_prediction = distance / max_;
+        Vector3 prediction = target + target_velocity * seconds_prediction;
+        arrive.Steer(prediction);
 
 
 
